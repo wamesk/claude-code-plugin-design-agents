@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Export size for scripts/wireframe-png.sh: total canvas width x height in CSS px. -->
+<meta name="wf-size" content="1820x1180">
+<title>Meters — list (wireframe)</title>
+<link rel="stylesheet" href="wireframe-kit.css">
+</head>
+<body>
+<div class="wf-frames">
+
+  <div class="wf-frame">
+    <div class="wf-state">Desktop — default, filtered</div>
+    <div class="wf-page">
+      <div class="wf-shell">
+        <nav class="wf-sidebar">
+          <div class="wf-nav-item">Dashboard</div>
+          <div class="wf-nav-group">Property</div>
+          <div class="wf-nav-item">Buildings</div>
+          <div class="wf-nav-item wf-nav-item--active">Meters</div>
+          <div class="wf-nav-item">Readings</div>
+          <div class="wf-nav-group">Finance</div>
+          <div class="wf-nav-item">Invoices</div>
+        </nav>
+        <main class="wf-main">
+          <div class="wf-row wf-between">
+            <h1 class="wf-h1">Meters <span class="wf-note" data-n="1"></span></h1>
+            <div class="wf-row"><span class="wf-btn">Import</span><span class="wf-btn wf-btn--primary">Add meter</span></div>
+          </div>
+          <div class="wf-row">
+            <div class="wf-input wf-grow">Search by number, premise or address</div>
+            <div class="wf-select" style="width:180px">Building</div>
+            <div class="wf-select" style="width:160px">Medium</div>
+            <span class="wf-btn wf-btn--ghost">More filters</span>
+          </div>
+          <div class="wf-row"><span class="wf-chip">Medium: Water</span><span class="wf-chip">No reading in May</span><span class="wf-muted">38 of 412 meters</span> <span class="wf-note" data-n="2"></span></div>
+          <table class="wf-table">
+            <tr><th>Number</th><th>Premise</th><th>Medium</th><th>Last reading</th><th class="wf-num">Value</th><th>Status</th><th></th></tr>
+            <tr><td>VOD-0142</td><td>Strečnianska 13, flat 4.12</td><td>Cold water</td><td>30 Apr 2026</td><td class="wf-num">1 284.330 m³</td><td><span class="wf-badge">Missing May</span></td><td>⋯</td></tr>
+            <tr><td>VOD-0143</td><td>Strečnianska 13, flat 4.13 — long premise name wraps here</td><td>Hot water</td><td>—</td><td class="wf-num">no reading</td><td><span class="wf-badge wf-badge--strong">Never read</span></td><td>⋯</td></tr>
+            <tr><td>VOD-0151</td><td>Strečnianska 15, office 1.02</td><td>Cold water</td><td>31 May 2026</td><td class="wf-num">87.004 m³</td><td><span class="wf-badge">OK</span></td><td>⋯</td></tr>
+          </table>
+          <div class="wf-row wf-between"><span class="wf-muted">Rows 1–25 of 38</span><span class="wf-row"><span class="wf-btn wf-btn--icon">‹</span><span class="wf-btn wf-btn--icon">›</span></span></div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <div class="wf-frame">
+    <div class="wf-state">Mobile — empty (filtered)</div>
+    <div class="wf-phone">
+      <div class="wf-statusbar"></div>
+      <div class="wf-navbar"><h1 class="wf-h1">Meters</h1><div class="wf-input">Search meters</div></div>
+      <div class="wf-content">
+        <div class="wf-empty">
+          <strong>No meter matches "VOD-99"</strong>
+          <span>Filters: Medium Water, Building Strečnianska 15.</span>
+          <span class="wf-btn">Clear filters</span> <span class="wf-note" data-n="3"></span>
+        </div>
+      </div>
+      <div class="wf-tabbar"><span>Today</span><span class="wf-tab--active">Meters</span><span>Readings</span><span>Profile</span></div>
+    </div>
+  </div>
+
+</div>
+
+<section class="wf-notes">
+  <h2>Notes</h2>
+  <ol>
+    <li>Reached from the main menu (Property › Meters) and from the Building detail tab.</li>
+    <li>Active filters as removable chips; the count updates with every change.</li>
+    <li>Empty result names the filters that caused it and offers to clear them.</li>
+  </ol>
+</section>
+</body>
+</html>

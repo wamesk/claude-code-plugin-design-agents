@@ -1,0 +1,17 @@
+{
+  "name": "design-agents",
+  "description": "Wireframes, UI design and UX/accessibility review that do not look AI-generated. Three agents — wireframer (flows, screen inventory, grayscale HTML wireframes exported to PNG), ui-designer (two to three design directions, one chosen with a reason, then built and audited for generic AI looks) and ux-reviewer (read-only usability, WCAG 2.2 AA and AI-look review) — plus the wame-ui-ux skill with the shared method. Platform rules come from laravel-nova-agents, laravel-filament-agents and ionic-agents when installed. Installs frontend-design and chrome-devtools-mcp with it.",
+  "author": {
+    "name": "Stanislav Červeňák",
+    "email": "info@wame.sk"
+  },
+  "version": "1.0.0",
+  "homepage": "https://github.com/wamesk/claude-code-plugin-design-agents",
+  "repository": "https://github.com/wamesk/claude-code-plugin-design-agents",
+  "license": "MIT",
+  "keywords": ["design", "ui", "ux", "wireframe", "accessibility", "wcag", "nova", "filament", "ionic"],
+  "dependencies": [
+    "frontend-design@claude-plugins-official",
+    "chrome-devtools-mcp@claude-plugins-official"
+  ]
+}

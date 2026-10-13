@@ -1,0 +1,16 @@
+{
+  "description": "design-agents: SessionStart shows at most one short tip per week to the user (systemMessage, never added to the model context) when Anthropic's design plugin is missing, or when the project uses Laravel Nova, Filament or Ionic and the matching wame platform plugin is missing. Pure bash, always exits 0.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/suggest-plugins.sh\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
