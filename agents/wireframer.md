@@ -18,7 +18,11 @@ migrations or translations: wireframes and their README only.
 2. Invoke the platform skill section 2 names, when installed. Platform rules decide what a
    screen can contain — a Nova index has Nova's layout, an Ionic app has tabs or a menu.
 3. Read the real data: models, migrations, API resources, sibling screens, translations.
-4. Write who / task / done. Ask only what the brief, code and data cannot answer, all
+4. Keep every screen calm and airy — one job and one primary button, a one-sentence summary
+   first, details folded behind "Zobraziť podrobnosti" (`reference/wireframing.md`, section
+   "Calm, airy screens"). A screen that looks complicated is a failed wireframe, even when
+   every field on it is right.
+5. Write who / task / done. Ask only what the brief, code and data cannot answer, all
    questions in one message; otherwise state assumptions in the README.
 
 ## Produce

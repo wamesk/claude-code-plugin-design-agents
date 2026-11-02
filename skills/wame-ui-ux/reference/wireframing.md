@@ -4,6 +4,7 @@
 
 ## Contents
 - What a wireframe is for
+- Calm, airy screens (default)
 - Output folder and files
 - Page skeleton
 - Kit classes
@@ -21,6 +22,33 @@ data shapes — a wireframe with lorem ipsum hides every hard decision.
 Draw at the fidelity the question needs: a flow question needs boxes and arrows; a layout
 question needs the real fields, columns and actions. Default: mid-fidelity screens (real
 content, kit components, no styling).
+
+## Calm, airy screens (default)
+
+A screen must never look complicated or like a heap of information. The product owner rejected
+a correct but dense set (2026-11-02: "viac vzdušné, moderné UI/UX, nesmie to vyzerať
+komplikovane"). Draw every screen this way unless the brief asks for a dense expert view:
+
+- **One job, one primary button.** Each screen answers one question or finishes one step.
+  Secondary actions are quiet (link or ghost button); destructive ones sit apart.
+- **Summary first, details on demand.** Show one plain sentence and at most 1–3 key numbers.
+  Tables per group, row-level errors, logs and anomaly lists go behind "Zobraziť podrobnosti",
+  into a drawer or onto a second screen. Draw both the collapsed and the expanded frame.
+- **At most 5–7 visible items per block.** More rows means a summary plus a link to the full
+  list or a downloadable report, never a wall of table.
+- **Whitespace is structure.** Content column about 720–840 px centred in the content area,
+  generous padding, soft dividers instead of boxes inside boxes, rounded cards, a clear type
+  scale (one large title, one short lead sentence).
+- **Light progress.** A wizard shows "Krok X z N · Názov" with a thin progress bar, not a heavy
+  stepper with every label boxed.
+- **Status in words.** A short word with a small glyph ("Hotovo", "Čaká", "Chyba"), not piles
+  of badges; colour is never the only signal.
+- **Plain, friendly copy.** Second person plural ("Nahrajte…", "Skontrolujte…"), no jargon or
+  internal codes in the visible layer — technical identifiers only inside the expanded detail
+  where the user needs them (e.g. the Excel sheet and row to fix).
+
+Before exporting, look at each frame and ask: could a non-technical client tell in five seconds
+what this screen wants from them? If not, cut or fold until they can.
 
 ## Output folder and files
 
@@ -126,4 +154,5 @@ KPI-tile row, three identical cards, or invented data.
 - [ ] Every screen shows the states listed in SKILL.md section 1, or marks them n/a with a reason.
 - [ ] Real labels and data shapes, including the longest value and an empty value.
 - [ ] Reachability annotated for every new screen.
+- [ ] Calm and airy: one primary action per screen, summary first, details folded, at most 5–7 visible items per block.
 - [ ] PNG exported and checked; nothing clipped.

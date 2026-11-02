@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-11-02
+
+### Changed
+
+- **Wireframes are calm and airy by default.** New section "Calm, airy screens" in
+  `wame-ui-ux/reference/wireframing.md` and a method step in the `wireframer` agent: one job and
+  one primary button per screen, summary first with details folded, at most 5–7 visible items
+  per block, generous whitespace, a light "Krok X z N" progress, plain second-person copy. A
+  checklist item enforces it. Reason: a client rejected a correct but dense wizard as
+  complicated.
+
 ## [1.0.0] - 2026-10-13
 
 First release. Design work had no home of its own: `frontend-design` covers the look of web
